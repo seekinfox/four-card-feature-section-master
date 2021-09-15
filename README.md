@@ -19,8 +19,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](https://raw.githubusercontent.com/seekinfox/four-card-feature-section-master/main/Screenshot_2021-09-15%20Frontend%20Mentor%20Four%20card%20feature%20section(2).png)
-![](https://raw.githubusercontent.com/seekinfox/four-card-feature-section-master/main/Screenshot_2021-09-15%20Frontend%20Mentor%20Four%20card%20feature%20section(1).png)
+![mobile-view](https://raw.githubusercontent.com/seekinfox/four-card-feature-section-master/main/Screenshot_2021-09-15%20Frontend%20Mentor%20Four%20card%20feature%20section(2).png)
+![desktop-view](https://raw.githubusercontent.com/seekinfox/four-card-feature-section-master/main/Screenshot_2021-09-15%20Frontend%20Mentor%20Four%20card%20feature%20section(1).png)
 
 ### Links
 
