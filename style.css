@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+html,
+body,
+main {
+    box-sizing: border-box;
+    outline: 1px solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+:root {
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+    --Very-Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
+header {
+    text-align: center;
+    padding: 3rem 4rem 4rem 3rem;
+    outline: 1px solid;
+}
+
+header h1 {
+    font-size: 1.4rem;
+    font-weight: 200;
+    color: var(--Very-Dark-Blue);
+}
+
+header > p:nth-of-type(1) {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--Very-Dark-Blue);
+
+}
+
+header > p:nth-of-type(2) {
+    font-size: 13px;
+    color: var(--Grayish-Blue);
+}
+
+/* card starts here*/
+.card {
+    border-radius: 0.5rem;
+    width: 20.5rem;
+    margin-bottom: 1.5rem;
+    padding: 2rem;
+    box-shadow: 0px 5px 10px var(--Grayish-Blue);
+}
+
+.card h2 {
+    font-size: 15px;
+    color: var(--Very-Dark-Blue);
+    margin-bottom: 0.5rem;
+}
+
+.card p {
+    font-size: 13px;
+    color: var(--Grayish-Blue);
+    line-height: 1.5;
+    padding-bottom: 2rem;
+}
