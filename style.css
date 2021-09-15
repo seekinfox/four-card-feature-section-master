@@ -1,257 +1,113 @@
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Manrope', sans-serif;
-
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
 }
 
 html,
-body {
-    width: 100vw;
-    height: 100%;
+body,
+main {
+    box-sizing: border-box;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    background: var(--Light-Grayish-Blue);
+    justify-content: center;
+    background: var(--Very-Light-Gray);
 }
 
 :root {
-    --Very-Dark-Grayish-Blue: hsl(217, 19%, 35%);
-    --Desaturated-Dark-Blue: hsl(214, 17%, 51%);
-    --Grayish-Blue: hsl(212, 23%, 69%);
-    --Light-Grayish-Blue: hsl(210, 46%, 95%);
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+    --Very-Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
 }
 
-.main-card {
-    position: relative;
-    width: 20.5rem;
-    background: white;
+header {
+    text-align: center;
+    padding: 5rem 4rem 5rem 3rem;
+}
+
+header h1 {
+
+    font-size: 1.4rem;
+    font-weight: 200;
+    color: var(--Very-Dark-Blue);
+}
+
+header > p:nth-of-type(1) {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--Very-Dark-Blue);
+    margin-bottom: 1rem;
+}
+
+header > p:nth-of-type(2) {
+    font-size: 13px;
+    color: var(--Grayish-Blue);
+}
+
+/* card starts here*/
+.card {
     border-radius: 0.5rem;
+    width: 20.5rem;
+    margin-bottom: 1.5rem;
+    padding: 2rem;
+    box-shadow: 0px 5px 10px var(--Grayish-Blue);
+    background: white;
 }
 
-/*header section*/
-.image {
-    width: 100%;
-    height: 12.5rem;
-    background: url("https://raw.githubusercontent.com/seekinfox/Article-preview-cpmponent/main/images/drawers.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center top -0.8rem;
-    border-radius: 0.5rem 0.5rem 0 0;
+.card h2 {
+    font-size: 15px;
+    color: var(--Very-Dark-Blue);
+    margin-bottom: 0.5rem;
 }
 
-/*info section*/
-.info {
+.card p {
+    font-size: 13px;
+    color: var(--Grayish-Blue);
     line-height: 1.5;
-    box-sizing: border-box;
-    padding: 2.5rem 2rem 0 2rem;
-    width: 100%;
-    font-size: 13.4px;
+    padding-bottom: 2.5rem;
 }
 
-h4 {
-    padding-right: 1rem;
-    font-size: 16px;
-    padding-bottom: 1rem;
-    color: var(--Very-Dark-Grayish-Blue);
-    font-weight: 700;
-}
-
-.info p {
-    color: var(--Grayish-Blue);
-    font-weight: 400;
-}
-
-/*about section*/
-.about {
-    width: 100%;
+.card .image {
     display: flex;
-    align-items: center;
-    font-size: 13px;
-    padding: 2.2rem 2rem 1.2rem 2rem;
+    justify-content: flex-end;
 }
 
-.about img {
-    width: 2.5rem;
-    height: 2.5rem;
-    border-radius: 50%;
-    margin-right: 1rem;
+.card:nth-of-type(1) {
+    border-top: 0.3rem solid var(--Cyan);
 }
 
-.share {
-    margin-left: 3.8rem;
-    border-radius: 50%;
-    padding: 8.2px;
-    width: 31px;
-    height: 31px;
-    background: var(--Light-Grayish-Blue);
-     cursor: pointer;
+.desktop-view .card:nth-of-type(1) {
+    border-top: 0.3rem solid var(--Red);
 }
 
-.name {
-    font-size: 13.2px;
-    color: var(--Very-Dark-Grayish-Blue);
-    font-weight: 700;
-}
-
-.date {
-    font-size: 13px;
-    color: var(--Grayish-Blue);
-}
-
-/*popup starts here*/
-.about-popup .popup-box {
-    visibility: hidden;
-    position: absolute;
-    box-sizing: border-box;
-    bottom: 0;
-    right:0;
-  
-    width: 100%;
-    height: 4.9rem;
-    border-radius: 0 0 0.5rem 0.5rem;
-    background: var(--Very-Dark-Grayish-Blue);
-    display: flex;
-    align-items: center;
-
-}
-.popup-box p {
-    margin: 0 1.5rem 0 2rem;
-    font-size: 12.5px;
-    color: var(--Grayish-Blue);
-    letter-spacing: 0.3rem;
-}
-.fb {
-   margin-right: 1rem; 
-}
-.tw {
-    margin-right: 1rem;
-}
-.share-popup{
-    margin-left: 3.3rem;
+.desktop-view .card:nth-of-type(2) {
+    border-top: 0.3rem solid var(--Orange);
 }
 
 
-.share-popup {
-    cursor: pointer;
-    border-radius: 50%;
-    padding: 7.7px;
-    width: 30px;
-    height: 30px;
-    background: var(--Light-Grayish-Blue);
+.card:nth-of-type(2) {
+    border-top: 0.3rem solid var(--Blue);
+}
+footer {
+    margin-top: 5rem;
 }
 
-.about-popup .visible {
-   visibility: visible;
-    animation: wave 0.2s ease-in-out;
-}
-@keyframes wave {
-    0%{
-        width:5rem;
-        height: 4.9rem;
-        border-radius: 5rem;
-        overflow: hidden;
+@media (min-width: 1100px) {
+    header > p:nth-of-type(2) {
+        width: 30rem;
     }
-    
-    100% {
-        width: 100%;
-        height: 4.9rem;
-        border-radius:  0 0 0.5rem 0.5rem;
-    }
-}
-
-
-@media (min-width: 1000px) {
-
-    html,
-    body {
+    .desktop-card-section {
+        width:110%;
         display: flex;
-        justify-content: center;
+        flex-direction: row;
+        justify-content: space-around;
         align-items: center;
     }
-
-    .main-card {
-        box-sizing: border-box;
-        display: flex;
-        width: 43rem;
-        height: 17rem;
-    }
-
-    .image {
-        height: 100%;
-        background-size: cover;
-        background-position: center left;
-        border-radius: 0.5rem 0 0 0.5rem;
-    }
-
-    .info {
-        box-sizing: border-box;
-        padding: 2rem 2rem 0;
-
-    }
-
-    .info h4 {
-        font-size: 19px;
-        padding-right: 1rem;
-    }
-
-    .about {
-        margin-left: 0.3rem;
-        padding: 1rem 0 0 02rem;
-    }
-
-    .share {
-        margin-left: 9rem;
-    }
-/*   popup for desktop starts here */
-   .about-popup .popup-box {
-        visibility: hidden;
-        width: 15rem;
-        height: 3.5rem;
-        border-radius: 0.5rem;
-       bottom: 3.7rem;
-       right: -6rem;
-       box-shadow: 0px 10px 10px var(--Light-Grayish-Blue);
-    }
-    .about-popup {
-        position: relative;
-    }
-    .share-popup {
-        display: none;
-    }
-    .about-popup .arrow {
-       
-        bottom: -1rem;
-        right: 6.5rem;
-        position: absolute;
-        border: 0.5rem solid;
-        border-color: var(--Very-Dark-Grayish-Blue) transparent transparent transparent;
-    }
-    .about-popup .visible {
-        visibility: visible;
-        animation: wave-desktop 0.1s ease-in-out;
-    }
-    @keyframes wave-desktop {
-        from {
-            width: 5rem;
-            height: 2rem;
-            border-radius: 5rem;
-            overflow: hidden;
-        }
-        to {
-            width: 15rem;
-            height: 3.5rem;
-            overflow: hidden;
-        }
-    }
-    .share.color {
-        background-color: var(--Very-Dark-Grayish-Blue);
-        
-    }
-    .share.color path {
-        fill: var(--Light-Grayish-Blue);
-    }
 }
-
-
